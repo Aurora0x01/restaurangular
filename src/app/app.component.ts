@@ -1,12 +1,13 @@
+
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { MainNavComponent } from './main-nav/main-nav.component'; // Adjust the path if necessary
 
 @Component({
-  selector: 'app-root', //<app-root></app-root>
-  standalone: true,
-  imports: [RouterOutlet],
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  standalone: true,
+  imports: [MainNavComponent] // Import the MainNavComponent here
 })
 export class AppComponent {
   title = 'restaurangular';
