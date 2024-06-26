@@ -5,7 +5,8 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component'; // Example component
 import { CarteComponent } from './carte/carte.component'; // Example component
 import { ReserveComponent } from './reserve/reserve.component'; // Example component
-import { ContactComponent } from './contact/contact.component'; // Example component
+import { ContactComponent } from './contact/contact.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async'; // Example component
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,7 +19,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),
     provideHttpClient(),
-    provideAnimations(),
+    provideAnimations(), provideAnimationsAsync(),
     // Add other providers if needed
   ],
 };
