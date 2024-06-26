@@ -7,13 +7,13 @@ import { NgIf } from '@angular/common';
   standalone: true,
   imports: [
     MatCardModule,
-    NgIf // Import NgIf if you're using *ngIf in your template
+    NgIf
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  pancakes = 'assets/images/pancakes.jpg';
+  pancakes = 'assets/images/pancakes.jpg'; // Updated path
 
   constructor() { }
 

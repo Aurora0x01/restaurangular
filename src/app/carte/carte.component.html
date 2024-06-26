@@ -1,1 +1,6 @@
-<p>carte works!</p>
+<main-dash></main-dash>
+
+<div *ngFor = "let d of dogs">
+    {{d.name}} est {{d.race}}
+</div>
+<p *ngFor="let temp of temperatures">{{temp}}</p>

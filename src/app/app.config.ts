@@ -7,7 +7,7 @@ import { CarteComponent } from './carte/carte.component'; // Example component
 import { ReserveComponent } from './reserve/reserve.component'; // Example component
 import { ContactComponent } from './contact/contact.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async'; // Example component
-
+import { MainDashComponent } from './main-dash/main-dash.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'carte', component: CarteComponent },
